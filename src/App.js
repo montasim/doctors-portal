@@ -1,7 +1,12 @@
+import { Route, Routes } from "react-router-dom";
+import Login from "./Pages/Authentication/Login";
+
 function App() {
   return (
     <div>
-      <h2 className="text-3xl font-bold underline">Doctors Portal</h2>
+      <Routes>
+        <Route path='/login' element={<Login />} />
+      </Routes>
     </div>
   );
 }
