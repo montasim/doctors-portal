@@ -14,11 +14,11 @@ const AvailableAppointments = ({ date }) => {
     }, []);
     return (
         <div className='my-20'>
-            <h3 className='text-2xl text-center text-[#19D3AE]'>Available Appointments on {format(date, 'PP')}</h3>
+            <h3 className='text-2xl text-center text-secondary'>Available Appointments on {format(date, 'PP')}</h3>
 
             <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 mt-20'>
                 {
-                    appointments.map(appointment => <AvailableAppointment appointment={appointment} setBookAppointment={setBookAppointment} />)
+                    appointments.map((appointment, index) => <AvailableAppointment key={index} appointment={appointment} setBookAppointment={setBookAppointment} />)
                 }
                 {
                     bookAppointment && <BookAppointment date={date} bookAppointment={bookAppointment} setBookAppointment={setBookAppointment} />
