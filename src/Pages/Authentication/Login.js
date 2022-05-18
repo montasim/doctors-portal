@@ -105,7 +105,7 @@ const Login = () => {
 
                         <p className='mt-3 text-center'><small>Forgot password? <Link className='text-secondary' to='/reset-password'>Reset Password</Link></small></p>
 
-                        <p className='mt-3 text-center'><small>New to Doctors Portal? <Link className='text-secondary' to='/register'>Create An Account</Link></small></p>
+                        <p className='mt-3 text-center'><small>New to Doctors Portal? <Link className='text-secondary' to='/signup'>Create An Account</Link></small></p>
                     </form>
 
                     <div className='divider'>OR</div>
