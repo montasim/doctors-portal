@@ -4,16 +4,31 @@ import appointment from '../../Assets/images/appointment.png';
 const ContactUs = () => {
     return (
         <div style={{ backgroundImage: `url(${appointment})` }} className='my-40 p-12'>
-            <div className='text-center text-white'>
-                <h3 className='text-2xl text-[#19D3AE]'>Contact Us</h3>
-                <h2 className='text-4xl'>Stay connected with us</h2>
+            <div className='text-center pb-14 text-white'>
+                <p className='text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-accent to-info'>
+                    Contact Us
+                </p>
+                <h1 className='text-4xl'>Stay connected with us</h1>
             </div>
-            <form className='flex flex-col justify-center items-center mt-10'>
-                <input type="email" placeholder="Email Address" class="input input-bordered input-md w-full max-w-xs" />
-                <input type="text" placeholder="Subject" class="input input-bordered input-md w-full max-w-xs my-4" />
-                <textarea placeholder="Your Message" class="textarea input-bordered input-lg w-full h-32 max-w-xs" />
-            </form>
-            <button class="border-0 btn bg-gradient-to-r from-[#19D3AE] to-[#0FCFEC] text-white font-bold uppercase block mx-auto mt-10 px-8">Submit</button>
+            <div className='grid grid-cols-1 justify-items-center gap-5'>
+                <input
+                    type='text'
+                    placeholder='Email Address'
+                    className='input w-full max-w-md'
+                />
+                <input
+                    type='text'
+                    placeholder='Subject'
+                    className='input w-full max-w-md'
+                />
+                <textarea
+                    className='textarea w-full max-w-md'
+                    placeholder='Your message'
+                    rows={6}
+                ></textarea>
+
+                <button class="mt-6 border-0 btn bg-gradient-to-r from-[#19D3AE] to-[#0FCFEC] text-white font-bold uppercase">Get Started</button>
+            </div>
         </div>
     );
 };
