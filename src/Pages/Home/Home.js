@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../Components/Footer';
 import Navbar from '../../Components/Navbar';
 import About from './About';
 import AboutAppointment from './AboutAppointment';
@@ -17,6 +18,7 @@ const Home = () => {
             <AboutAppointment />
             <Testimonials />
             <ContactUs />
+            <Footer />
         </div>
     );
 };
